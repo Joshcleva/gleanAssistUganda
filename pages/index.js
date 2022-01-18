@@ -9,17 +9,21 @@ export default function Home({ posts }) {
 
   return (
     <div className="container mx-auto px-10 mb-8 mt-8 justif">
-      <meta name="google-site-verification" content="5_lX8sP53cRQKZDgoW_cr_DOfQ-Kfye3WSPUzmsWZKo" />
       <Head>
         <title>
-          GleanAssist | Get assistance for all tech problems, data tricks, betting, make
-          money and hacking Here
+          GleanAssist | Get assistance for all tech problems, data tricks,
+          betting, make money and hacking Here
         </title>
         <meta
           name="description"
           content="Get all the latest tech solutions and hacks"
         />
         <meta property="og:title" content="All Tech solutions" />
+        <meta
+          name="google-site-verification"
+          content="5_lX8sP53cRQKZDgoW_cr_DOfQ-Kfye3WSPUzmsWZKo"
+        />
+
         <link rel="icon" href="/favicon.png" />
       </Head>
 
