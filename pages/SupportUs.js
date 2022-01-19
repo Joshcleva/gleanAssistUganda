@@ -55,7 +55,7 @@ const SupportUs = () => {
           </div>
         </Link>
         <p className="cursor-pointer">
-          <Link href="tel:*165*1*1*0772951826##"> 0772951826 </Link>
+          <Link href="tel:*165*1*1*0772951826#"> 0772951826 </Link>
         </p>
       </div>
     </>
