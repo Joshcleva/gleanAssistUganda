@@ -81,6 +81,15 @@ function NavBar() {
           ))}
         </div>
               </div>
+              <Link href="/SearchGleanAssist">
+                <img
+                  className="cursor-pointer"
+                  height="20 px"
+                  width="30 px"
+                  src="/search2.gif"
+                  alt="Logo"
+                />
+          </Link>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
