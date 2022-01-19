@@ -28,7 +28,10 @@ const Footer = () => {
 
             {/* Social media */}
             <div className="mx-8 grid grid-cols-5 gap-x-3">
-              <Link href="https://www.facebook.com/groups/gleanassist">
+              <Link
+                href="https://www.facebook.com/groups/gleanassist"
+                target="_blank"
+              >
                 <a className="footer-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +47,10 @@ const Footer = () => {
                   </svg>
                 </a>
               </Link>
-              <Link href="https://www.youtube.com/channel/UCyoEsIHlWzUm-CvNddMmePA/featured">
+              <Link
+                href="https://www.youtube.com/channel/UCyoEsIHlWzUm-CvNddMmePA/featured"
+                target="_blank"
+              >
                 <a className="footer-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +66,7 @@ const Footer = () => {
                   </svg>
                 </a>
               </Link>
-              <Link href="https://twitter.com/home?lang=en">
+              <Link href="https://twitter.com/home?lang=en" target="_blank">
                 <a>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +98,7 @@ const Footer = () => {
                   </svg>
                 </a>
               </Link>
-              <Link href="https://www.instagram.com">
+              <Link href="https://www.instagram.com" target="_blank">
                 <a className="footer-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +126,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="SupportUs">
+                <Link href="/SupportUs">
                   <a className="footer-link">Support Us</a>
                 </Link>
               </li>
@@ -131,12 +137,12 @@ const Footer = () => {
           <div className="text-light-grayish-blue mb-10 md:mb-0 font-semibold cursor-pointer">
             <ul className="grid gap-y-3 md:text-left">
               <li>
-                <Link href="Terms-&-Conditions">
+                <Link href="/Terms-&-Conditions">
                   <a className="footer-link">Terms & Conditions</a>
                 </Link>
               </li>
               <li>
-                <Link href="Privacy-Policy">
+                <Link href="/Privacy-Policy">
                   <a className="footer-link">Privacy Policy</a>
                 </Link>
               </li>
