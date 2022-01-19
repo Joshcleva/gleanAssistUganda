@@ -49,7 +49,7 @@ const SupportUs = () => {
         <p className="cursor-pointer">
           <Link href="https://chippercash.com">@clarkrex</Link>
         </p>
-        <Link href="tel:*165*1*1*0772951826##">
+        <Link href="tel:*165*1*1*0772951826#">
           <div className="text-center text-lg mb-2 mt-2 justify-center transition duration-500 ease transform hover:-translate-y-1 inline-block items-center lg:items-center bg-blue-500 rounded-full text-white px-4 py-1">
             <h3> Mobile Money </h3>
           </div>

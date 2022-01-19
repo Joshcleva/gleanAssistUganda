@@ -11,11 +11,11 @@ export default function Home({ posts }) {
       <Head>
         <title>
           GleanAssist | Get assistance for all tech problems, data tricks,
-          betting, make money and hacking Here
+          betting, make money and Data Tricks Here
         </title>
         <meta
           name="description"
-          content="Get all the latest tech solutions and hacks"
+          content="Get All the help you need on how to's | data trick & unlimited hacks | learning videos | tutorials | gaming | betting Here"
         />
         <meta property="og:title" content="All Tech solutions" />
         <meta

@@ -10,10 +10,13 @@ const SearchSda = ({ posts }) => {
   return (
     <div className="container mx-auto px-10 mb-8 text-center">
       <Head>
-        <title>SdaMissionUg | Search Any Sda Music | Preachings</title>
+        <title>
+          GleanAssist | Get assistance for all tech problems, data tricks,
+          betting, make money and Data Tricks Here
+        </title>
         <meta
           name="description"
-          content="Download all kinds of Sda Music Here"
+          content="Get All the help you need on how to's | data trick & unlimited hacks | learning videos | tutorials | gaming | betting Here"
         />
         <meta
           property="og:title"
