@@ -23,9 +23,9 @@ const PostWidget = ({ categories, slug }) => {
 
   return (
     <div className="mt-8 shadow-lg rounded-lg p-8 pb-12 mb-8" style={{backgroundImage: "url(https://www.itl.cat/pngfile/big/157-1572257_professional-website-background-images-hd-professional-emails-background.jpg)"}}>
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">
+      <h1 className="text-xl mb-8 font-semibold border-b pb-4">
         {slug ? "Related Posts" : "Recent Posts"}
-      </h3>
+      </h1>
       {relatedPosts.map((post, index) => (
         <div key={index} className="flex items-center w-full mb-4">
           <div className="w-16 flex-none">

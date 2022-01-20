@@ -10,12 +10,11 @@ export default function Home({ posts }) {
     <div className="container mx-auto px-10 mb-8 mt-8 justif">
       <Head>
         <title>
-          GleanAssist | Get assistance for all tech problems, data tricks,
-          betting, make money and Data Tricks Here
+          GleanAssist | Get assistance for all tech problems, make money & All how to's Here
         </title>
         <meta
           name="description"
-          content="Get All the help you need on how to's | data trick & unlimited hacks | learning videos | tutorials | gaming | betting Here"
+          content="Get All the help you need on how to's | free internet & unlimited hacks | learning videos | tutorials | gaming | betting Here"
         />
         <meta property="og:title" content="All Tech solutions" />
         <meta
@@ -41,7 +40,7 @@ export default function Home({ posts }) {
               height="20 px"
               width="30 px"
               src="/search2.gif"
-              alt="Logo"
+              alt="Search"
             />
           </div>
         </Link>

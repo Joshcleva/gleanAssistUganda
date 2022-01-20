@@ -20,7 +20,7 @@ const Categories = () => {
           "url(https://www.itl.cat/pngfile/big/157-1572257_professional-website-background-images-hd-professional-emails-background.jpg)",
       }}
     >
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Categories</h3>
+      <h2 className="text-xl mb-8 font-semibold border-b pb-4">Categories</h2>
       {categories.map((category, index) => (
         <Link key={index} href={`/category/${category.slug}`}>
           <span

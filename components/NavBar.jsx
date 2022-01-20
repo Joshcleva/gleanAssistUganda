@@ -55,12 +55,12 @@ function NavBar() {
   return (
     <div className="relative top-0 align-center">
       <nav className="bg-absolute lg:h-28 md:h-28 backdrop-blur" style={{backgroundImage: "url(https://www.itl.cat/pngfile/big/157-1572257_professional-website-background-images-hd-professional-emails-background.jpg)"}}>
-        <div className="max-w-7xl px-6 md:px-0">
+        <div className="max-w-7xl px-6 md:px-0 md:py-6">
           <div
             className="flex items-center justify-between md:justify-center h-14 uppercase"
             style={{ fontWeight: 600 }}>
             <div className="flex items-center justify-between w-11/12 flex-wrap">
-              <div className="cursor-pointer text-4xl mx-0 flex-shrink-0 lg:mt-4 md:mt-6 blur-lg">
+              <div className="cursor-pointer text-4xl mx-0 flex-shrink-0 lg:mt-4 blur-lg">
           <Link href="/">
                 <img
                   height="100 px"
@@ -87,7 +87,7 @@ function NavBar() {
                   height="20 px"
                   width="30 px"
                   src="/search2.gif"
-                  alt="Logo"
+                  alt="Search"
                 />
           </Link>
             </div>
