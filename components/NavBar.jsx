@@ -53,9 +53,9 @@ function NavBar() {
   }, []);
 
   return (
-    <div className="relative top-0">
-      <nav className="bg-absolute lg:h-20 md:h-24 backdrop-blur" style={{backgroundImage: "url(https://www.itl.cat/pngfile/big/157-1572257_professional-website-background-images-hd-professional-emails-background.jpg)"}}>
-        <div className="max-w-7xl mx-auto px-6 md:px-0">
+    <div className="relative top-0 align-center">
+      <nav className="bg-absolute lg:h-28 md:h-28 backdrop-blur" style={{backgroundImage: "url(https://www.itl.cat/pngfile/big/157-1572257_professional-website-background-images-hd-professional-emails-background.jpg)"}}>
+        <div className="max-w-7xl px-6 md:px-0">
           <div
             className="flex items-center justify-between md:justify-center h-14 uppercase"
             style={{ fontWeight: 600 }}>
