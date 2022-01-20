@@ -10,11 +10,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1875243848573845"
-            crossorigin="anonymous"
-          ></script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1875243848573845"
+     crossorigin="anonymous"></script>
           <meta
             name="google-site-verification"
             content="2faTE3QHgDmpuDRKhD4KE7qv5b-TLW5raYmQPbs_HVM"
