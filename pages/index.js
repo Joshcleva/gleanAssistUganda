@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home({ posts }) {
   return (
-    <div className="container mx-auto px-10 mb-8 mt-8 justif">
+    <div className="container mx-auto px-10 mb-8 mt-8 ">
       <Head>
         <title>
           GleanAssist | Get assistance for all tech problems, make money & All how to's Here
@@ -24,7 +24,7 @@ export default function Home({ posts }) {
 
         <link rel="icon" href="/favicon.png" />
       </Head>
-
+ 
       <FeaturedPosts />
       <div className="flex justify-center">
         <Link href="/SearchGleanAssist">

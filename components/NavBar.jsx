@@ -83,7 +83,7 @@ function NavBar() {
               </div>
               <Link href="/SearchGleanAssist">
                 <img
-                  className="cursor-pointer"
+                  className="relative round-full cursor-pointer"
                   height="20 px"
                   width="30 px"
                   src="/search2.gif"
