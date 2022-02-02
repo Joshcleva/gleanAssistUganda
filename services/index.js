@@ -71,6 +71,8 @@ export const getPostDetails = async (slug) => {
         }
         createdAt
         slug
+        downloadable
+        player
         content {
           raw
         }

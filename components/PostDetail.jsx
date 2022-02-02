@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import moment from 'moment';
+import ReactPlayer from 'react-player';
 
 const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
@@ -50,24 +51,39 @@ const PostDetail = ({ post }) => {
         <meta property="og:post" content="Get All the help you need on how to's | data trick & unlimited hacks | learning videos | tutorials | gaming | betting Here"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="shadow-lg rounded-lg lg:p-8 pb-12 mb-8 mt-8 bg-gray-300">
-        <div className="relative overflow-hidden shadow-md mb-6">
-          <img
-            src={post.featuredImage.url}
-            alt=""
-            className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg"
-          />
-        </div>
-        <div className="px-4 lg:px-0">
-          <div className="flex items-center mb-8 w-full">
-            <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8 items-center">
-              <img
-                alt={post.author.name}
-                height="30px"
-                width="30px"
-                className="align-middle rounded-full"
-                src={post.author.photo.url}
-              />
+      <div className="shadow-lg rounded-lg lg:p-8 pb-4 mt-8 bg-gray-300 w-full">
+          <div className="items-center mb-2 w-full">
+            <div className="items-center justify-center lg:mb-0">
+              <div style={{ position: "relative", padding: "56.25%" }}>
+                  <ReactPlayer
+                    style={{
+                      position: "absolute",
+                      top: "10px",
+                  left: "-2px",
+                      padding: "5px"
+                    }}
+                    url={`${post.player}`}
+                    width="90%"
+                    height="90%"
+                    controls={true}
+                  />
+              </div>
+                 <div className="justify-center text-center lg:mt-">
+                  <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-green-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
+                    Download Video
+                  </span>
+                </div>
+                <iframe
+                  className=" font-medium justify-center "
+                  src={`https://ytmp4.buzz/api/button/videos/${post.downloadable}`}
+                  width="100%"
+                  allowtransparency="true"
+                  scrolling="no"
+                  style={{
+                    border: "none",
+                    height: "auto",
+                  }}
+                ></iframe>
               <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">
                 {post.author.name}
               </p>
@@ -100,7 +116,6 @@ const PostDetail = ({ post }) => {
             return getContentFragment(index, children, typeObj, typeObj.type);
           })}
         </div>
-      </div>
     </>
   );
 };

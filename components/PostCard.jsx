@@ -6,14 +6,14 @@ import Link from 'next/link';
 import { grpahCMSImageLoader } from '../util';
 
 const PostCard = ({ post }) => (
-  <div className=" shadow-sm rounded-lg p-0 lg:p-2 pb-2 mb-8 mt-4" style={{backgroundImage: "url(https://www.itl.cat/pngfile/big/157-1572257_professional-website-background-images-hd-professional-emails-background.jpg)"}}>
-    <div className="relative overflow-hidden round-lg shadow-md pb-60 mb-4">
+  <div className=" shadow-sm rounded-lg lg:p-2 mt-2" style={{backgroundImage: "url(https://www.itl.cat/pngfile/big/157-1572257_professional-website-background-images-hd-professional-emails-background.jpg)"}}>
+    <div className="relative overflow-hidden round-lg shadow-md pb-60">
       <img src={post.featuredImage.url}
         alt={post.title}
-        className="object-top absolute h-80 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+        className="object-top absolute h-60 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
     </div>
 
-    <h1 className="transition duration-700 text-center mb-2 cursor-pointer hover:text-pink-600 text-2xl md:text-lg font-semibold">
+    <h1 className="transition duration-700 text-center mb-2 cursor-pointer hover:text-pink-600 text-lg md:text-small font-semibold">
       <Link href={`/post/${post.slug}`}>{post.title}</Link>
     </h1>
     <div className="block lg:flex text-center items-center justify-center mb-2 w-full">
@@ -27,7 +27,7 @@ const PostCard = ({ post }) => (
           className="align-middle rounded-full"
           src={post.author.photo.url}
         />
-        <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">
+        <p className="inline align-middle text-gray-700 ml-2 font-sm text-sm">
           {post.author.name}
         </p>
       </div>
@@ -40,13 +40,10 @@ const PostCard = ({ post }) => (
         </span>
       </div>
     </div>
-    <p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-2">
-      {post.excerpt}
-    </p>
     <div className="text-center">
       <Link href={`/post/${post.slug}`}>
-        <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
-          Continue Reading
+        <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-sm font-medium rounded-full text-white px-2 py-2 cursor-pointer mb-2">
+          Watch Post
          </span>
       </Link>
     </div>

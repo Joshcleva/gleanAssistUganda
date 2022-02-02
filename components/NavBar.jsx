@@ -60,7 +60,7 @@ function NavBar() {
             className="flex items-center justify-between md:justify-center h-14 uppercase"
             style={{ fontWeight: 600 }}>
             <div className="flex items-center justify-between w-11/12 flex-wrap">
-              <div className="cursor-pointer text-4xl mx-0 flex-shrink-0 lg:mt-4 blur-lg">
+              <div className="cursor-pointer text-4xl mx-0 flex-shrink-0 lg:mt-4">
           <Link href="/">
                 <img
                   height="100 px"
@@ -70,11 +70,11 @@ function NavBar() {
                 />
           </Link>
               </div>
-              <div className="flex items-center text-xs lg:text-sm">
-              <div className="hidden md:float-left md:contents">
+              <div className="flex items-center text-xs lg:text-sm ">
+              <div className="hidden md:float-left md:contents ">
           {categories.map((category, index) => (
             <Link key={index} href={`/category/${category.slug}`}>
-              <span className="md:float-right mt-2 align-middle text-black ml-4 font-semibold cursor-pointer">
+              <span className="flex flex-grow max-w-2xl md:float-right mt-2 align-middle text-black ml-4 font-semibold cursor-pointer  transition duration-100 transform hover:scale-125 hover:text-white active:text-red-500">
                 {category.name}
               </span>
             </Link>
