@@ -47,7 +47,29 @@ export default function Home({ posts }) {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
-          <div className="flex flex-wrap gap-4 sm:grid md:grid-cols-2 xl:grid-cols-3">
+          <div classN
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           
+            
+            
+            
+             
+             
+             
+             
+             
+             
+             
+             ame="flex flex-wrap gap-4 sm:grid md:grid-cols-2 xl:grid-cols-3">
           {posts.map((post, index) => (
             <PostCard key={index} post={post.node} />
           ))}
